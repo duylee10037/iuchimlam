@@ -74,6 +74,13 @@ async function loadGalaxyData() {
     }
     if (!galaxyId) { showError(); return; }
     try {
+        // Sử dụng API demo nếu không có backend thực
+        if (galaxyId === 'demo') {
+            galaxyData = demoGalaxyDataDefault;
+            showStartButton();
+            return;
+        }
+        
         const response = await fetch(`https://dearlove-backend.onrender.com/api/galaxies/${galaxyId}`);
         if (!response.ok) { showError(); return; }
         const data = await response.json();
@@ -82,7 +89,9 @@ async function loadGalaxyData() {
         showStartButton();
     } catch (error) {
         console.error('Error loading galaxy:', error);
-        showError();
+        // Fallback to demo mode
+        galaxyData = demoGalaxyDataDefault;
+        showStartButton();
     }
 }
 
