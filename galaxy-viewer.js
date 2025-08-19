@@ -13,7 +13,7 @@ const demoGalaxyDataDefault = {
     ],
     icons: ["♥", "💖", "❤️", "❤️", "💕", "💕"],
     colors: '#ff6b9d',
-    images: ["https://cdn.deargift.online/uploads/z6654939494311_5eacc5c2b6fdbcbee6dcd20673a8040c.jpg"],
+    images: ["https://i.ibb.co/Gf7qHPfC/z6731934312896-0fd5915cd3b832995443285cc23178f7.jpg"],
     song: "eyenoselip.mp3",
     isHeart: true,
     textHeart: "Trí Toán",
@@ -745,3 +745,4 @@ function initializeHeartAnimation() {
 
 // --- Init ---
 loadGalaxyData();
+
