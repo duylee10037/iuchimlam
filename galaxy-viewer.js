@@ -6,7 +6,7 @@ const isDemo = urlParams.get('demo') === '1' || !urlParams.get('id'); // Tự đ
 // --- Demo Data ---
 const demoGalaxyDataDefault = {
     messages: [
-        "I love you so much! ❤️", "Our Anniverasry", "I love you 💖", "25/08/2004",
+        "I love you so much! ❤️", "Our Anniverasry", "I love you 💖", "17/03/2008",
         "Thank you for being my sunshine ", "Thank you for being my everything 💕",
         "You are my universe ", "There is no other", "You're amazing",
         "You make my heart smile ", "Love ya! 💖", "Honey bunch, you are my everything! "
@@ -745,4 +745,5 @@ function initializeHeartAnimation() {
 
 // --- Init ---
 loadGalaxyData();
+
 
